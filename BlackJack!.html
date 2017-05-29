@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>BlackJack!</title>
+	<link href="src/css/app.css" rel="stylesheet">
+</head>
+
+<body onload="shuffle(3)">
+	<div class="game-window">
+		<div id="dealer-cards">
+		</div>
+
+
+		<div id="player-cards">
+		</div>
+
+
+		<div class="bottom-view">
+			<div class="chip-label">
+				<p>Chips: <span id="bank">$500</span></p>
+				<p>Bet: <span id="betting">$0</span></p>
+			</div>
+
+
+			<div id="bet">
+				<div class="btn-group">
+					<button class="btn btn-secondary" onclick="runBet()">Bet</button> <button class="btn btn-success" onclick="increaseBet()">+</button> <button class="btn btn-danger" onclick="decreaseBet()">-</button>
+				</div>
+			</div>
+
+
+			<div id="controls">
+				<div class="btn-group">
+					<button class="btn btn-primary" onclick="hit()">Hit</button> <button class="btn btn-secondary" onclick="doubleDown()">Double</button> <button class="btn btn-secondary" onclick="split()">Split</button> <button class="btn btn-secondary" onclick="stand()">Stand</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- BlackJack! js files -->
+	<script src="src/scripts/interface.js">
+	</script> 
+	<script src="src/scripts/deck.js">
+	</script> 
+	<script src="src/scripts/BlackJack!.js">
+	</script> <!-- Bootstrap -->
+	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" rel="stylesheet">
+	<script crossorigin="anonymous" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" src="https://code.jquery.com/jquery-3.1.1.slim.min.js">
+	</script> 
+	<script crossorigin="anonymous" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+	</script> 
+	<script crossorigin="anonymous" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+	</script>
+</body>
+</html>

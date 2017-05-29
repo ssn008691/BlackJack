@@ -1,0 +1,61 @@
+.game-window {
+	position: relative;
+	height: 500px;
+	width: 500px;
+	background-color: #1E8449;
+	border: 10px solid #873600;
+	border-radius: 20px;
+}
+#player-cards {
+	display: table;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	bottom:4em;
+	
+}
+#dealer-cards {
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 1em;
+}
+img {
+	display: inline-block;
+	height: 100px;
+	margin: auto;
+	text-align: center;
+}
+.bottom-view {
+	width: 100%;
+	position: absolute;
+	bottom: 1em;
+	text-align: center;
+	margin: 0 auto;
+}
+#controls {
+	display: none;
+}
+#bet {
+	display: inline-block;
+}
+.chip-label {	
+	display: inline-block;
+	margin: 0 1em 0 0;
+	border-radius: .25rem;
+	background-color: rgba(15, 15, 15, 0.7);
+	line-height: 1.25;
+	padding: .25rem;
+	border: 1px solid #454545;
+}
+.chip-label p {
+	margin: auto;
+	vertical-align: middle;
+	text-align: Center;
+	font-weight: 600;
+	color: #fefefe;
+	line-height: 1.25;
+	padding: .25rem;
+}
